@@ -113,10 +113,12 @@ button:active {
 
 .cta {
 	box-sizing: content-box;
-	margin-inline: 25rem;
+	
 	padding-bottom: 16px;
 	padding-top: 16px;
 	background-color: #FA6F6F;
+	margin: 0 auto;
+	display: block;
 }
 
 
