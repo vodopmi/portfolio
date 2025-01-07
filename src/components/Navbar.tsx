@@ -1,9 +1,25 @@
-import { useState } from "react";
+import * as React from "react";
+import Link from "next/link";
+ 
+import { cn } from "@/lib/utils";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { buttonVariants } from "./ui/button";
+import { Menu } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
   NavigationMenuItem,
+  NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
+
+import { useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -11,12 +27,38 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import VariableFontHoverByLetter from "./fancy/variable-font-hover-by-letter";
+import LetterSwapForward from "./fancy/letter-swap-forward-anim";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+
+interface ContactLinksProps {
+  name: string;
+  url: string;
+}
+
+  const contactLinks: ContactLinksProps[] = [
+      {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/mikhail-vodopianov-b9506723a/",
+      },
+      {
+      name: "Email Me",
+      url: "mailto:vodopmi@icloud.com",
+      },
+      {
+      name: "Telegram",
+      url: "https://t.me/vodopmi",
+      },
+      {
+      name: "Pinterest",
+      url: "https://www.pinterest.com/vodopmi/",
+      },
+      {
+      name: "Instagram",
+      url: "https://www.instagram.com/vodopmi/",
+      },
+  ];
+
 
 interface RouteProps {
   href: string;
@@ -25,120 +67,102 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#hero",
+    label: "Hero",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#message",
+    label: "Message",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#projects",
+    label: "Projects",
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: "#track-record",
+    label: "Track Record",
+  },
+  {
+    href: "#coworkers-thoughts",
+    label: "Coworkers Thoughts",
+  },
+  {
+    href: "#contact",
+    label: "Contact",
   },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <header className="fixed top-0 z-40 w-full">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
-          <NavigationMenuItem className="font-bold flex">
+          <NavigationMenuItem>
             <a
               rel="noreferrer noopener"
-              href="/"
-              className="ml-2 font-bold text-xl flex"
-            >
-              <LogoIcon />
-              ShadcnUI/React
+              href="#hero"
+              className="text-lg flex gap-2 items-center bg-background rounded-full px-1 h-10 pr-4 border border-muted hover:bg-muted transition-all">
+              <Avatar className="w-8 h-8">
+                <AvatarImage src="https://cdn4.cdn-telegram.org/file/uiXTGVCvbjFTgZg-lceVrh_vJ1PB5abOHvCmbqETFNxtb_zj2mUNI9Ut72ZB9FXxAK4X209dOfS0trBo_VEfnOwdqFa5vKFq1UsgcJ2mGAANauBATMsR1_DzYchEdpMSrv8oLsnwKyDY_WbyNmUhwT-UnxLT33FNMpRPnPTDF0K1fSDE8h0ga1zb6aEKl-vGCk5C7sxKeZm4aST6Tk--VzTWUo5kr_y7IsqTyJEzc9o4pzudtrWeAnMFqy2H5Cwu7ajgIQkwbggIl0cY8Jo3SUkpeXehDZNcVxiGLZg_ScXf1p4Omja3QesUkRzjEMVu7MCa23he58l8aoNW0FVSOA.jpg" />
+                <AvatarFallback className="text-sm">M</AvatarFallback>
+              </Avatar>
+              Mikhail Vodopianov
             </a>
           </NavigationMenuItem>
 
-          {/* mobile */}
-          <span className="flex md:hidden">
+
+          <span className="flex bg-background rounded-full border border-muted">
+            <a
+              rel="noreferrer noopener"
+              href="mailto:vodopmi@icloud.com">
+            <Button variant="ghost" className="hover:bg-primary-foreground hover:text-primary rounded-full text-sm text-primary hidden sm:block">Email Me</Button>
+            </a>
             <ModeToggle />
 
             <Sheet
               open={isOpen}
               onOpenChange={setIsOpen}
             >
-              <SheetTrigger className="px-2">
+              <SheetTrigger className="px-2.5 rounded-full hover:bg-muted transition-all">
                 <Menu
-                  className="flex md:hidden h-5 w-5"
+                  className="flex h-5 w-5"
                   onClick={() => setIsOpen(true)}
                 >
                   <span className="sr-only">Menu Icon</span>
                 </Menu>
               </SheetTrigger>
 
-              <SheetContent side={"left"}>
-                <SheetHeader>
-                  <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+              <SheetContent side={"top"} className="w-screen">
+                {/* <SheetHeader>
+                  <SheetTitle className="font-semibold text-2xl text-left pb-5">
+                    Mikhail Vodopianov
                   </SheetTitle>
-                </SheetHeader>
-                <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label }: RouteProps) => (
-                    <a
+                </SheetHeader> */}
+                <nav className="flex flex-col justify-start items-le gap-5 my-4 text-4xl lg:text-8xl font-semibold children:w-full children:text-left ">
+                {routeList.map(({ href, label }: RouteProps) => (
+                  <a className="hover:text-primary transition-all"
                       rel="noreferrer noopener"
                       key={label}
                       href={href}
-                      onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
-                    >
-                      {label}
-                    </a>
-                  ))}
-                  <a
-                    rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                    target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
-                      variant: "secondary",
-                    })}`}
-                  >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                      onClick={() => setIsOpen(false)}>{label}
                   </a>
+                  ))}
+                  {/* <div className="flex gap-8 w-full">
+                  {contactLinks.map(({ name, url }: ContactLinksProps) => (
+                  <a className="text-xl font-medium hover:text-primary transition-all"
+                      rel="noreferrer noopener"
+                      target=""
+                      href={url}>
+                        {name}
+                  </a>
+                  ))}
+                  </div> */}
                 </nav>
               </SheetContent>
             </Sheet>
           </span>
 
-          {/* desktop */}
-          <nav className="hidden md:flex gap-2">
-            {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-              >
-                {route.label}
-              </a>
-            ))}
-          </nav>
-
-          <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
-            </a>
-
-            <ModeToggle />
-          </div>
         </NavigationMenuList>
       </NavigationMenu>
     </header>

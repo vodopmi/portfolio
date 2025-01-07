@@ -2,20 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* HeroCards background shadow */
-.shadow {
-  position: absolute;
-  background: hsl(var(--primary) / 0%);
-  border-radius: 24px;
-  rotate: 35deg;
-  z-index: -1;
-  width: 260px;
-  top: 200px;
-  height: 400px;
-  filter: blur(150px);
-  will-change: transform;
-  animation: shadow-slide infinite 4s linear alternate;
+body::-webkit-scrollbar {
+  display: none;
 }
+
+.galery-hero::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 
 @keyframes shadow-slide {
   from {
