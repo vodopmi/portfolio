@@ -86,13 +86,13 @@ export const Projects = () => {
                     <div className="z-10 sm:z-0 flex flex-col items-center sm:items-start sm:flex-row sm:justify-between w-full gap-5 order-2 sm:order-1 pt-10 sm:pt-0">
                         <div className="flex items-start gap-1">
                             <div className="rounded-full text-small border dark:border-white px-2.5">
-                                <p>Finance</p>
+                                <p>Ads</p>
                             </div>
                             <div className="rounded-full text-small border dark:border-white px-2.5">
-                                <p>P2P</p>
+                                <p>AI</p>
                             </div>
                             <div className="rounded-full text-small border dark:border-white px-2.5">
-                                <p>Crypto</p>
+                                <p>Media Production</p>
                             </div>
                         </div>
                         <p className="max-w-lg text-sm text-center sm:text-left">
