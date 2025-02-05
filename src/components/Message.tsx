@@ -12,7 +12,7 @@ export const Message = () => {
 
   return (
     <section id="message"
-    className="w-screen h-screen relative bg-background"
+    className="w-screen h-[800px] sm:h-screen relative bg-background"
     >
     <div className="container px-6 h-full">
     <div className="h-full flex items-center justify-center my-auto">
