@@ -49,8 +49,8 @@ export const Projects = () => {
                         <AnimatedBeamDemo/>
                     </div>
                     <div className="self-center flex flex-row order-4 py-20 w-full max-w-7xl gap-[2rem] items-baseline justify-center">
-                    <img src='../src/assets/pics/vp-1440.png' alt="Description" className="max-h-[700px] rounded-xl shadow-lg" />
-                    <img src='../src/assets/pics/vp-mobile.png' alt="Description" className="h-[500px] object-cover rounded-xl shadow-lg" />
+                    <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/vp-1440-9uuJ0VNrRYe8yeGhFS8Q14VuhlO4rD.png' alt="Description" className="max-h-[700px] rounded-xl shadow-lg" />
+                    <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/vp-mobile-qrFqZZTIsVJOXFeZQzYfT96BBitEbR.pngg' alt="Description" className="h-[500px] object-cover rounded-xl shadow-lg" />
                     </div>
                     <div className="flex w-full justify-center text-9xl order-3">
                         <TextReveal text="Seamless Payments, Infinite Possibilities." className="text-9xl" />
