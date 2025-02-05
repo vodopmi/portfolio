@@ -15,19 +15,19 @@ interface TestimonialProps {
 
 const leadList: LeadProps[] = [
     {
-      imageUrl: "src/assets/chad.png",
+      imageUrl: "https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/chad-Y2iEyRmQDnLaSpFLuIhGWFUZq44Vyh.png",
       name: "Chad Terry",
       position: "Production Manager & Tech Director",
       url: "https://www.linkedin.com/in/michael-chad-terry/",
     },
     {
-      imageUrl: "src/assets/egor.jpg",
+      imageUrl: "https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/egor-PPJP9XVJYzRXGtl41HMrVFDQdVTIDe.jpg",
       name: "Egor Andrianov",
       position: "Chief Technology Officer",
       url: "https://www.linkedin.com/in/talentumtuum/",
     },
     {
-      imageUrl: "src/assets/ivan.jpg",
+      imageUrl: "https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/ivan-EhXzQ1s2Gj52Sfj7Qms0TMlSo1mStC.jpg",
       name: "Ivan Chernyaev",
       position: "Project Manager & Business Analyst",
       url: "#",

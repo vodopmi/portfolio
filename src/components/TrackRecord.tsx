@@ -87,7 +87,7 @@ export const Timeline: React.FC = () => {
         date="Full-time, Remote since September 2023"
         title="Viscap.ai – Ad Production and Management Platform"
         // description="The company has high expectations and using OKRs there is a mutual understanding of expectations and performance."
-        icon={'../src/assets/viscap-logo.png'} 
+        icon={'https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/viscap-logo-DYmeBDBA7x6bc0D5W0V6VA5pW4jp2U.png'} 
         listItems={[
           "5 Brand New Features.",
           "2 Complete Reskins with ui libraries.",
@@ -104,7 +104,7 @@ export const Timeline: React.FC = () => {
         date="Part-time, Remote, Oct. 2023 – Dec. 2024"
         title="VoidPay – P2P Payment System"
         // description="This is an excellent company and they reward their employees. It's becoming a big company but it's still private, so the culture is as good as it gets at 1,000+ employees if you ask me. Managers are still adapting to the growth I think, but everyone has to. Great place to work."
-        icon={'../src/assets/voidpay-logo.png'}
+        icon={'https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/voidpay-logo-sghYPjvtLVq9FTYHxXA1mCuViO838l.png'}
         listItems={[
           "Increased checkout page conversion rate from 45% to 85%.",
           "Built & Maintained own design system.",
@@ -120,7 +120,7 @@ export const Timeline: React.FC = () => {
         date="Full-time, Remote, Jan. 2023 – Oct. 2023"
         title="Atlantis – Web Agency"
         // description="Work in Slack is one of the beautiful experiences I can do in my entire life. There are a lot of interesting things to learn and managers respect your time and your personality." 
-        icon={'../src/assets/atls-logo.png'}
+        icon={'https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/atls-logo-FtjhIe90umoGhzKCirbubF9DaPthq3.png'}
         listItems={[
           "1 SaaS.",
           "1 Mobile Crypto Game.",
@@ -131,7 +131,7 @@ export const Timeline: React.FC = () => {
         date="Learning & Practicing since Dec. 2021"
         title="Start Point"
         description={''} 
-        icon={'../src/assets/icon.ico'}      />
+        icon={'https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/icon-ElILa8bbfkRJdxT1g7kGERwMal3OLl.svg'}      />
     </div>
   );
 };
