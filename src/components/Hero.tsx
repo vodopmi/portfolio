@@ -19,24 +19,11 @@ export const Hero: React.FC = () => {
   return (
     <section 
       id="hero"
-      className="h-[100dvh] w-screen relative bg-background">
+      className="h-[932px] sm:h-screen w-screen relative bg-background">
       <div className="flex flex-col h-full relative py-14">
       <div className="relative z-10 h-full flex items-center">
         <Carusel />
       </div>
-        {/* Grid of Images
-        <div className="relative z-10 flex justify-start items-center h-full w-100vw">
-          <div className="grid grid-rows-2 grid-cols-4 galery-hero md:flex overflow-scroll gap-4 items-center scrollbar-hide h-full my-3">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Hero Image ${index + 1}`}
-                className="object-cover w-auto max-w-[30vw] md:max-w-[20vw] max-h-[30vw] md:max-h-[50vh] rounded-xl md:rounded-3xl 2xl:rounded-[2rem]  transition-transform duration-300 hover:scale-105 "
-              />
-            ))}
-          </div>
-        </div> */}
         <div className="mx-auto max-w-4xl py-8 sm:py-6 lg:py-12">
           <div className="text-center">
             <h2 className="text-center text-xl  md:text-xl lg:text-3xl font-medium mb-8 text-pretty text-primary">
