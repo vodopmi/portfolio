@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
   return (
     <section 
       id="hero"
-      className="h-[932px] sm:h-screen w-screen relative bg-background">
+      className="h-[800px] sm:h-screen w-screen relative bg-background">
       <div className="flex flex-col h-full relative py-14">
       <div className="relative z-10 h-full flex items-center">
         <Carusel />

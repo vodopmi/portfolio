@@ -40,7 +40,7 @@ export const Contact = () => {
     return (
         <section
             id="contact"
-            className="w-screen h-screen relative bg-background"
+            className="w-screen h-[800px] sm:h-screen relative bg-background"
         >
         <div className="container h-full px-6 relative">
             <div className="absolute inset-x-0 bottom-0 w-full flex justify-between py-8 px-6">
