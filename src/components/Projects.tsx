@@ -2,6 +2,7 @@ import ParallaxDemo from "./fancy/parallax-demo";
 import { AnimatedBeamDemo } from "./magic/animated-beam";
 import { Button } from "./ui/button";
 import { ChartDemo } from "./ui/chart-demo";
+import { WistiaPlayer } from "@wistia/wistia-player-react";
 import {
     Tooltip,
     TooltipContent,
@@ -48,10 +49,14 @@ export const Projects = () => {
                     <div className="flex self-center order-3 pt-20 w-full max-w-7xl">
                         <AnimatedBeamDemo/>
                     </div>
-                    <div className="self-center flex flex-row order-4 py-20 w-full max-w-7xl gap-[2rem] items-baseline justify-center">
-                    <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/vp-1440-9uuJ0VNrRYe8yeGhFS8Q14VuhlO4rD.png' alt="Description" className="max-h-[700px] rounded-xl shadow-lg" />
-                    <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/vp-mobile-qrFqZZTIsVJOXFeZQzYfT96BBitEbR.png' alt="Description" className="h-[500px] object-cover rounded-xl shadow-lg" />
-                    </div>
+                    <div className="self-center flex sm:flex-row order-4 py-20 w-full max-w-7xl gap-[1rem] sm:gap-[2rem] items-baseline justify-center">
+  <div className="flex-grow-[2]">
+    <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/vp-1440-9uuJ0VNrRYe8yeGhFS8Q14VuhlO4rD.png' alt="Description" className="w-full h-auto rounded-xl shadow-lg" />
+  </div>
+  <div className="flex-grow">
+    <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/vp-mobile-qrFqZZTIsVJOXFeZQzYfT96BBitEbR.png' alt="Description" className="w-full h-auto rounded-xl shadow-lg" />
+  </div>
+</div>
                     {/* <div className="flex w-full justify-center text-9xl order-3">
                         <TextReveal text="Seamless Payments, Infinite Possibilities." className="text-9xl" />
                     </div> */}
@@ -79,11 +84,11 @@ export const Projects = () => {
                     </div>
                 </div>
                                 {/* Project 2 */}
-                <div className="relative w-full max-w-[2560px] bg-blue-600 rounded-[2.5rem] flex flex-col items-start p-8 text-card dark:text-white mt-[-200px]">
-                <div className="absolut">
+                <div className="relative w-full max-w-[2560px] bg-blue-600 rounded-[2.5rem] flex flex-col items-start gap-5 p-8 text-card dark:text-white mt-[-200px]">
+                {/* <div className="absolut">
                         <ParallaxDemo />
-                    </div>
-                    <div className="z-10 sm:z-0 flex flex-col items-center sm:items-start sm:flex-row sm:justify-between w-full gap-5 order-2 sm:order-1 pt-10 sm:pt-0">
+                    </div> */}
+                    <div className="z-10 sm:z-0 flex flex-col relative items-center sm:items-start sm:flex-row sm:justify-between w-full gap-5 order-2 sm:order-1 pt-10 sm:pt-0">
                         <div className="flex items-start gap-1">
                             <div className="rounded-full text-small border dark:border-white px-2.5">
                                 <p>Ads</p>
@@ -95,7 +100,7 @@ export const Projects = () => {
                                 <p>Media Production</p>
                             </div>
                         </div>
-                        <p className="max-w-lg text-sm text-center sm:text-left">
+                        <p className="relative max-w-lg text-sm text-center sm:text-left">
                         I built a design system and refreshed the platform’s visual identity. Designed new features like a Performance Hub for ad analysis and an Actor Hub to review and manage talent.
                         </p>
                     </div>
@@ -103,9 +108,28 @@ export const Projects = () => {
                     <h2 className="text-5xl sm:text-7xl font-semibold text-center max-w-3xl"><span className="sm:bg-green-500 px-0 sm:px-6 rounded-3xl">Ad</span> Production and Management <span>🎯</span> Platform</h2>
                     </div>
 
-                    <div className="z-10 flex relative self-center order-3 sm:my-40 max-w-7xl">
+                    <div className="flex flex-col gap-20 order-3 self-center sm:my-40 w-full max-w-7xl">
+                    <div className="z-10 h-auto w-full flex relative self-center order-3 gap-2 sm:gap-5 max-w-7xl">
+                        <div className="z-10 w-full hover:scale-105 duration-200 cursor-pointer transition-transform rounded-xl">
+                            <WistiaPlayer mediaId={"9ijov1rqln"}   do-not-track="true" controls-visible-on-load="false" silent- ="true" rounded-player="24"/>
+                        </div>
+                        <div className="z-10 w-full hover:scale-105 duration-200 cursor-pointer transition-transform rounded-xl">
+                            <WistiaPlayer mediaId={"x6u7z8x5qb"}   do-not-track="true" controls-visible-on-load="false" silent- ="true" rounded-player="24"/>
+                        </div>
+                        <div className="z-10 w-full hover:scale-105 duration-200 cursor-pointer transition-transform rounded-xl">
+                            <WistiaPlayer mediaId={"i01jxhloj7"}   do-not-track="true" controls-visible-on-load="false" silent- ="true" rounded-player="24"/>
+                        </div>
+                        <div className="z-10 w-full hover:scale-105 duration-200 cursor-pointer transition-transform rounded-xl">
+                            <WistiaPlayer mediaId={"30ctolj7vv"}   do-not-track="true" controls-visible-on-load="false" silent- ="true" rounded-player="24"/>
+                        </div>
+                    </div>
+
+                    <div className="z-10 w-full flex relative self-center order-3 max-w-7xl">
                         <ChartDemo />
                     </div>
+
+                    </div>
+
                     <div className="z-10 sm:z-0 flex w-full justify-center  sm:mb-36 order-last">
                     <TooltipProvider>
                     <Tooltip>
