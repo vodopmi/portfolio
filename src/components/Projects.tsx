@@ -117,7 +117,7 @@ export const Projects = () => {
                     </div>
 
                     <div className="flex flex-col gap-20 order-3 self-center sm:my-40 w-full max-w-7xl">
-                    <div className="z-10 h-auto w-full flex relative self-center order-3 gap-2 sm:gap-5 max-w-7xl">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-5 w-full max-w-7xl">
                         <div className="z-10 w-full hover:scale-105 duration-200 cursor-pointer transition-transform rounded-xl">
                             <WistiaPlayer mediaId={"9ijov1rqln"}   do-not-track="true" controls-visible-on-load="false" silent- ="true" rounded-player="24"/>
                         </div>
