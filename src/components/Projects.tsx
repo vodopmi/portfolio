@@ -40,7 +40,11 @@ export const Projects = () => {
                             </div>
                         </div>
                         <p className="max-w-lg text-sm text-center sm:text-left">
-                        Led a full redesign of the platform, creating and supporting a custom design system to unify the experience. Improved checkout page conversion and developed a new back-office tool to enhance operational efficiency.
+                        I led a comprehensive redesign of the platform, transforming engineer-built interfaces into a user-friendly experience.
+                        <br></br>
+                        <br></br>I developed a custom design system to unify the payment page, merchant dashboard, team dashboard, and admin panel. Introduced a new back-office tool, streamlining operations and enhancing efficiency across the board.
+                        <br></br>
+                        <br></br>Boosted checkout conversion rates through UX optimization.
                         </p>
                     </div>
                     <div className="flex w-full justify-center order-1 sm:order-2">
@@ -101,7 +105,11 @@ export const Projects = () => {
                             </div>
                         </div>
                         <p className="relative max-w-lg text-sm text-center sm:text-left">
-                        I built a design system and refreshed the platform’s visual identity. Designed new features like a Performance Hub for ad analysis and an Actor Hub to review and manage talent.
+                        Built a design system and refreshed the platform's look.
+                        <br></br>
+                        <br></br>Delivered 5 new features including Performance Hub for ad analytics, Actor Hub for talent management, Media Library, Shotlists, and Ideation tools. 
+                        <br></br>
+                        <br></br>Also led the Bootstrap to Ant.Design 5 redesign and developed helper apps for mobile and desktop.
                         </p>
                     </div>
                     <div className="z-10 sm:z-0 flex w-full justify-center order-1 sm:order-2 sm:mt-40">
