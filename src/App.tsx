@@ -6,6 +6,7 @@ import { TrackRecord } from "./components/TrackRecord";
 import { CoworkersThoughts } from "./components/CoworkersThoughts";
 import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
+import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster"
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
       <CoworkersThoughts />
       <Contact />
       <Toaster />
+      <Analytics />
     </>
   );
 }

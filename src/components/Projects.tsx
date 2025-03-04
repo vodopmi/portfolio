@@ -161,6 +161,28 @@ export const Projects = () => {
                     </TooltipProvider>
                     </div>
                 </div>
+
+                    {/* Project 3 */}
+                <div className="w-full max-w-[2560px] rounded-[2.5rem] flex flex-col items-center space-y-10 p-8 pt-[160px]">
+                    <a href="https://photo-portfolio-coral.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <div className="z-10 rounded-[1.5rem] grid grid-cols-1 sm:grid-cols-2 gap-8 bg-card border border-muted p-8">
+                        <div className="flex-grow">
+                            <img src='https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/Screenshot%202025-03-04%20120915-FcZAxKAYbPJ35IVSeKSiH9qFPzbVNM.png' alt="Description" className="w-full max-w-[600px] h-auto rounded-xl shadow-lg" />
+                        </div>
+                        <div className="flex flex-col gap-3">
+                        <h2 className="text-4xl font-semibold text-left text-primary max-w-3xl"><span className="text-card-foreground">Portfolio</span> + Admin Panel</h2>
+                        <p className="max-w-lg text-sm text-left">
+                        I designed and developed a personal portfolio and admin panel for content management. Started with a template, modified and improved to be more flexible and fit Fedor's needs.
+                        </p>
+                        <a href="https://photo-portfolio-coral.vercel.app/" target="_blank" rel="noopener noreferrer" className="my-2">
+                            <Button 
+                            className="w-auto rounded-full text-white hover:text-primary bg-primary hover:border border-primary"
+                            >Visit Fedor's Portfolio</Button>
+                        </a>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>        
     </section>
     );

@@ -45,6 +45,7 @@
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "@types/matter-js": "^0.19.8",
+    "@vercel/analytics": "^1.5.0",
     "@wistia/wistia-player": "^0.0.80",
     "@wistia/wistia-player-react": "^0.0.80",
     "class-variance-authority": "^0.7.1",
