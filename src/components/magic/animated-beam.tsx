@@ -40,11 +40,11 @@ export function AnimatedBeamDemo() {
       ref={containerRef}
     >
       <div className="flex size-full flex-col items-stretch justify-between">
-        <div className="flex flex-col xl:flex-row justify-between items-center gap-20">
+        <div className="flex flex-col xl:flex-row justify-between items-center gap-16">
           <Circle ref={div1Ref}>
             <Icons.user />
           </Circle>
-                <div className="flex flex-col xl:flex-row  justify-between gap-12">
+                <div className="flex flex-col xl:flex-row  justify-between gap-8">
                 <div ref={div3Ref} className="z-10 border-2 flex bg-background rounded-full items-center h-auto pl-1 pr-6 gap-2">
                     <div className="flex bg-primary-foreground dark:bg-muted rounded-full w-14 h-14 items-center justify-center"><Icons.checkout /></div>
                     <div className="flex flex-col py-2">
