@@ -46,6 +46,12 @@ const leadList: LeadProps[] = [
       comment:
         "He is a professional, easy to communicate, grasps information on the fly, offers solutions that work.<br /><br />From the improvements, I can only advise to pay more attention to the text in the layout, otherwise everything is perfect!",
     },
+    {
+      name: "Edgar Mkrtchyan",
+      position: "Software Engineer",
+      comment:
+        "Mikhail has an exceptional sense of the best UI/UX possible. He's not only an expert in great UX but also has a great grasp on the business problems and is very fast to understand the problem and visualize the solution.<br /><br />He's very attentive to details, is continuously improving his skills and is a really nice guy to work with.",
+    },
 ];
 
 
