@@ -29,9 +29,9 @@ export const Projects = () => {
                 <div className="w-full max-w-7xl flex flex-col gap-20">
                     {/* Project 1 V2*/}
                 <div className="w-full max-w-7xl bg-slate-100 bg-opacity-30 dark:bg-card dark:bg-opacity-100 border border-muted rounded-[1rem] flex flex-col items-center gap-20 px-8 py-10">
-                            <div className="flex flex-col items-center text-center gap-5 max-w-2xl">
+                            <div className="flex flex-col items-left sm:items-center text-left sm:text-center gap-5 max-w-2xl">
                                 <h3 className="text-xl">FINANCE, P2P, CRYPTO</h3>
-                                <h2 className="text-5xl font-medium max-w-3xl"><span className="text-primary">P2P</span> Payment Solution</h2>                        
+                                <h2 className="text-4xl font-semibold sm:text-5xl sm:font-medium max-w-3xl"><span className="text-primary">P2P</span> Payment Solution</h2>                        
                                 <p className="max-w-lg text-lg">
                                     I led a comprehensive redesign of the platform, transforming engineer-built interfaces into a user-friendly experience.
                                 </p>
@@ -70,9 +70,9 @@ export const Projects = () => {
                 </div>
                     {/* Project 2 V2*/}
                 <div className="w-full max-w-7xl bg-slate-100 bg-opacity-30 dark:bg-card dark:bg-opacity-100 border border-muted rounded-[1rem] flex flex-col items-center gap-20 px-8 py-10">
-                            <div className="flex flex-col items-center text-center gap-5 max-w-2xl">
-                                <h3 className="text-xl">ADS, AI, MEDIA PRODUCTION</h3>
-                                <h2 className="text-5xl font-medium max-w-3xl"><span className="bg-green-500 px-0 sm:px-6 rounded-lg">Ad</span> Production and Management <span>🎯</span> Platform</h2>                        
+                            <div className="flex flex-col items-left sm:items-center text-left sm:text-center gap-5 max-w-2xl">
+                                <h3 className="text-md sm:text-xl">ADS, AI, MEDIA PRODUCTION</h3>
+                                <h2 className="text-4xl font-semibold sm:text-5xl sm:font-medium max-w-3xl"><span className="bg-green-500 px-2 sm:px-6 rounded-lg">Ad</span> Production & Management <span>🎯</span> Platform</h2>                        
                                 <p className="max-w-lg text-lg">
                                     Delivered 5 new features including Performance Hub for ad analytics, Actor Hub for talent management, Media Library, Shotlists, and Ideation tools.
                                 </p>
