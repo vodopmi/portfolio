@@ -131,7 +131,7 @@ export const Timeline: React.FC = () => {
         date="Learning & Practicing since Dec. 2021"
         title="Start Point"
         description={''} 
-        icon={'https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/icon-ElILa8bbfkRJdxT1g7kGERwMal3OLl.svg'}      />
+        icon={'https://wlzjlnsxqo8fuoob.public.blob.vercel-storage.com/vodopmi/mikhail-favicon-47yLlAOR3P0xmMrVdyt2FC18UkgFwJ.svg'}      />
     </div>
   );
 };
