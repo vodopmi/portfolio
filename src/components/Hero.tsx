@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
               Mikhail Vodopianov
             </h2>
             <h1 data-cursor="AAA" className="text-balance text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl font-semibold tracking-tight">
-              Clarity Drives Every Detail.
+              Clarity Drives Every Detail
             </h1>
             <p className="mt-8 text-pretty text-lg lg:text-xl 2xl:text-2xl font-regular">
               Digital designer with two years in a few complex SaaS, building design systems and performance-driven features within small teams.

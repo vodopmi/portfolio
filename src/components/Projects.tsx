@@ -45,7 +45,7 @@ export const Projects = () => {
                                             description: "This page is currently under construction. Soon, you'll be able to see 👀 the full case.",
                                             })
                                         }}
-                                        className="w-auto rounded-full text-md h-9 px-5 mt-5 text-card-foreground bg-transparent hover:text-primary border border-card-foreground hover:border-primary hover:cursor-not-allowed">View Project ↗</Button>
+                                        className="w-auto rounded-full text-md h-9 px-5 mt-5 text-card-foreground bg-transparent hover:text-accent dark:hover:text-accent-foreground border border-card-foreground hover:border-primary hover:cursor-not-allowed">View Project ↗</Button>
                                         </TooltipTrigger>
                                         <TooltipContent className=" rounded-2xl">
                                             <div className="w-full sm:w-80 flex flex-col gap-1 p-2">
@@ -86,7 +86,7 @@ export const Projects = () => {
                                             description: "This page is currently under construction. Soon, you'll be able to see 👀 the full case.",
                                             })
                                         }}
-                                        className="w-auto rounded-full text-md h-9 px-5 mt-5 text-card-foreground bg-transparent hover:text-primary border border-card-foreground hover:border-primary hover:cursor-not-allowed">View Project ↗</Button>
+                                        className="w-auto rounded-full text-md h-9 px-5 mt-5 text-card-foreground bg-transparent hover:text-accent dark:hover:text-accent-foreground border border-card-foreground hover:border-primary hover:cursor-not-allowed">View Project ↗</Button>
                                         </TooltipTrigger>
                                         <TooltipContent className=" rounded-2xl">
                                             <div className="w-full sm:w-80 flex flex-col gap-1 p-2">
@@ -129,7 +129,7 @@ export const Projects = () => {
                         </p>
                         <a href="https://photo-portfolio-coral.vercel.app/" target="_blank" rel="noopener noreferrer" className="my-2">
                             <Button 
-                            className="w-auto rounded-full text-md h-9 px-5 mt-5 text-card-foreground bg-transparent hover:text-blue-600 border border-card-foreground hover:border-blue-600"
+                            className="w-auto rounded-full text-md h-9 px-5 mt-5 text-card-foreground bg-transparent hover:text-blue-500 hover:border-blue-500 hover:bg-transparent border border-card-foreground"
                             >Visit Fedor's Portfolio ↗</Button>
                         </a>
                         </div>
