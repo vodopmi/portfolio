@@ -7,7 +7,8 @@ import { CoworkersThoughts } from "./components/CoworkersThoughts";
 import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
 import { Analytics } from "@vercel/analytics/react";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
+import { Playground } from "./components/Playground";
 import "./App.css";
 
 
@@ -28,6 +29,7 @@ function App() {
       <TrackRecord />
       <CoworkersThoughts />
       <Contact />
+      {/* <Playground /> */}
       <Toaster />
       <Analytics />
     </>
