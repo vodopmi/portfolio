@@ -52,6 +52,12 @@ const leadList: LeadProps[] = [
       comment:
         "Mikhail has an exceptional sense of the best UI/UX possible. He's not only an expert in great UX but also has a great grasp on the business problems and is very fast to understand the problem and visualize the solution.<br /><br />He's very attentive to details, is continuously improving his skills and is a really nice guy to work with.",
     },
+    {
+      name: "Evgenii Goncharenko",
+      position: "Frontend Developer",
+      comment:
+        "Working with Mikhail for 1.5 years has been a true pleasure thanks to his professionalism, meticulous attention to detail, deep UI/UX expertise, business-oriented mindset, and excellent communication, making him an indispensable specialist I highly recommend.",
+    }
 ];
 
 
